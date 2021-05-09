@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">FREE CRM Application Test Automation Test Suite</th></tr>
+<tr><td><a href="#t0">Free CRM App Test Cases</a></td><td class="num">7</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">169,021</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FREE CRM Application Test Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Free CRM App Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1612965236439</td><td rowspan="1">54</td></tr><tr class="failedeven"><td><a href="#m1">loginTest</a></td><td rowspan="1">1612965262879</td><td rowspan="1">3168</td></tr><tr><th colspan="4">Free CRM App Test Cases &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m2">validateCreateNewContact</a></td><td rowspan="1">1612965393357</td><td rowspan="1">0</td></tr><tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m3">selectContactsTest</a></td><td rowspan="1">1612965370694</td><td rowspan="1">132</td></tr><tr class="passedeven"><td><a href="#m4">selectMultipleContactsTest</a></td><td rowspan="1">1612965390652</td><td rowspan="1">240</td></tr><tr class="passedeven"><td><a href="#m5">verifyContactsPageLabel</a></td><td rowspan="1">1612965348797</td><td rowspan="1">93</td></tr><tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.HomePageTest</td><td><a href="#m6">verifyContactsLink</a></td><td rowspan="1">1612965322419</td><td rowspan="1">3838</td></tr><tr class="passedodd"><td><a href="#m7">verifyUserNameTest</a></td><td rowspan="1">1612965303431</td><td rowspan="1">130</td></tr><tr class="passedodd"><td><a href="#m8">verifythehomePageTitleTest</a></td><td rowspan="1">1612965284537</td><td rowspan="1">11</td></tr><tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m9">crmLogoImageTest</a></td><td rowspan="1">1612965249269</td><td rowspan="1">175</td></tr></tbody>
+</table>
+<h2>Free CRM App Test Cases</h2><h3 id="m0">com.crm.qa.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Software] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]
+	at com.crm.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: element click intercepted: Element &lt;input type=&quot;submit&quot; value=&quot;Login&quot; class=&quot;btn btn-small&quot;&gt; is not clickable at point (1182, 117). Other element would receive the click: &lt;div id=&quot;preloader&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=88.0.4324.150)
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DEBU&apos;, ip: &apos;192.168.29.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}), userDataDir=C:\Users\Debanjan\AppData\Local\Temp\scoped_dir10320_727410960}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:6799}, acceptInsecureCerts=false, browserVersion=88.0.4324.150, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: a4b2c615469e237667736cd455e02275
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.crm.qa.pages.LoginPage.login(LoginPage.java:48)
+	at com.crm.qa.testcases.LoginPageTest.loginTest(LoginPageTest.java:44)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.qa.testcases.ContactsPageTest#validateCreateNewContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.crm.qa.util.TestUtil.getTestData(TestUtil.java:55)
+	at com.crm.qa.testcases.ContactsPageTest.getCRMTestData(ContactsPageTest.java:59)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.crm.qa.testcases.ContactsPageTest#selectContactsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.crm.qa.testcases.ContactsPageTest#selectMultipleContactsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.crm.qa.testcases.ContactsPageTest#verifyContactsPageLabel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.crm.qa.testcases.HomePageTest#verifyContactsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.crm.qa.testcases.HomePageTest#verifyUserNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.crm.qa.testcases.HomePageTest#verifythehomePageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.crm.qa.testcases.LoginPageTest#crmLogoImageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
